@@ -16,13 +16,3 @@ $(document).ready(function () {
         }, 300);
     });
 });
-// $(window).on('resize', function () {
-//     var win = $(window);
-//     if (win.width() < 992) {
-//         $('#header .menu nav').css('transition', 'all .3s linear');
-//     }
-//     else {
-//         $('body').removeClass('hidden');
-//         $('#header .menu nav').css('transition', 'none');
-//     }
-// });
