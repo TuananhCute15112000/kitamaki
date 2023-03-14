@@ -7,168 +7,157 @@
 }
 
 /* responsive */
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 1500px) {
+    .mainvisual__content__title{
+        font-size: 6.667vw;
+    }
+}
 
-@media screen and (max-width: 1150px) {}
+@media screen and (max-width: 1150px) {
+    /* slider TEXT */
+    .swiper1 .swiper-wrapper a {
+        font-size: 22px;
+    }
+}
 
 @media screen and (min-width: 1025px) {}
 
 @media screen and (max-width: 1024px) {
 
-    /* ========== */
-    .hamburger {
-        width: 40px;
-        height: 27px;
-        position: relative;
-        cursor: pointer;
-        display: inline-block;
-        z-index: 100;
-        margin-left: 40px;
+    /* ---------------------------------------------
+                                content  
+    -----------------------------------------------*/
+    .h_title {
+        font-size: 28px;
     }
 
-    .hamburger span {
-        background: #a4a4a4;
-        display: block;
-        position: absolute;
-        height: 3px;
-        transform: rotate(0deg);
-        transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
-        opacity: 1;
-        width: 100%;
-        left: 0;
+    .h_title.-fs1 {
+        font-size: 24px;
     }
 
-    .hamburger span:nth-child(1) {
-        top: 0px;
+    /* concept */
+    .concept_fit {
+        font-size: 22px;
     }
 
-    .hamburger span:nth-child(2) {
-        top: 12px;
+    /* party report */
+    /* contract */
+    .contract_info_title {
+        font-size: 24px;
     }
 
-    .hamburger span:nth-child(3) {
-        top: 24px;
+    .contract_col_title {
+        font-size: 28px;
     }
 
-    .hamburger.active span:nth-child(1) {
-        top: 12px;
-        transform: rotate(135deg);
+    /* footer */
+    .footer_col_item {
+        display: none;
     }
 
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-        left: -60px;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        top: 12px;
-        transform: rotate(-135deg);
-    }
-
-    /* ========== */
-
-    #header .menu {
-        display: block;
-        width: auto;
-    }
-
-    #header #gnavi {
-        z-index: 9999;
-        position: fixed;
-        height: calc(100vh - 70px);
-        top: 70px;
-        right: -100%;
-        background: #fff;
-        width: 100%;
-        border-top: 1px solid #ffd3d8;
-        overflow: auto;
+    .footer_content {
         flex-direction: column;
-        justify-content: flex-start;
-        transition: transform 1s;
-        padding: 0 0 75px;
+        margin-top: 0;
     }
 
-    #header #gnavi > li {
-        display: block;
-        transition: all 0.3s;
-        width: 100%;
-        margin: 0 0;
-        padding: 0;
-        height: auto;
-        flex: none;
+    .footer_content_contact {
+        text-align: center;
+        margin-top: 30px;
     }
 
-    #header #gnavi li a,
-    #header #gnavi li span.btn_sub {
-        font-size: 16px;
-        line-height: 1.4;
-        text-decoration: none;
-        padding: 0 .5em 0 .7em;
-        height: 55px;
-        display: flex;
-        flex-direction: column;
+    .footer_content_contact span {
+        padding-left: 0;
+    }
+
+    .footer_content_contact.blank {
         justify-content: center;
-        position: relative;
-        text-align: left;
-        box-sizing: border-box;
-        border-bottom: 1px solid #ffd3d8;
     }
 
-    #header #gnavi li span.btn_sub {
-        color: #fff;
-        background: #e06277;
-    }
-
-    #header #gnavi .sub_menu {
-        background: #fffbfb;
-        padding: 0 0;
-        border-bottom: 1px solid #ffd3d8;
-    }
-
-    #header #gnavi .sub_menu ul {
-        width: 100%;
+    .footer_content_contact.blank .link {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0 0;
     }
 
-    #header #gnavi .sub_menu li {
-        width: 50%;
-        border-bottom: 1px solid #ffd3d8;
-        margin: 0 0;
+    .footer_content_link.target {
+        margin: 0 10px;
     }
 
-    #header #gnavi .sub_menu li:nth-child(odd) {
-        border-right: 1px solid #ffd3d8;
+    .footer_content_link.target:not(:last-child) {
+        margin-bottom: 0;
     }
 
-    #header #gnavi .sub_menu li:last-child {
-        border-bottom: 0;
-    }
-
-    #header #gnavi .sub_menu li a {
-        white-space: inherit;
-        font-size: 15px;
-        line-height: 1.4;
-        height: 45px;
-        background: #fffbfb;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: left;
-        padding: 0 1.3em 0 .7em;
-        border-bottom: 0;
-        color: #333;
-    }
-
-    #header #gnavi.active {
-        transform: translateX(-100%);
+    .footer_address {
+        padding-top: 35px;
     }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* mainvisual */
+    .mainvisual__content__text{
+        margin-top: 30px;
+    }
+    /* -------------------------------------
+                            content
+    ----------------------------------------*/
+    /* mew */
+    .news_list_text{
+        padding: 10px 10px 20px;
+    }
+    .news_list_cat{
+        margin-bottom: 2px;
+    }
+    .news_list_title{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .news_list_date::before{
+        width: calc(100% - 80px);
+    }
+    /* wedding */
+    .wedding_slogan {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .wedding-info{
+        padding: 0 16px;
+    }
+    /* parralax */
+    .c-pallarax {
+        height: 50vh;
+    }
+
+    /* party report */
+    .contract_layout_content {
+        font-size: 28px;
+    }
+
+    /* slider TEXT */
+    .swiper1 .swiper-wrapper a {
+        font-size: 20px;
+    }
+
+    /* footer */
+    .footer_content_link,
+    .footer_content_contact span {
+        font-size: 16px;
+    }
+
+    .footer_content_contact {
+        margin-top: 10px;
+    }
+
+    .footer_content_phone {
+        font-size: 22px;
+    }
+
+    .footer_content_contact,
+    .footer_content_link.target {
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -188,9 +177,265 @@
     .box_pc {
         display: none;
     }
+
+    /* header */
+    .menu {
+        width: 50px;
+    }
+    .menu_icon {
+        left: 20px
+    }
+    h1{
+        padding: 0 10px;
+    }
+    .header_inner{
+        padding: 10px 16px 0;
+    }
+    .header_link{
+        width: 80px;
+    }
+    .menu_icon::after{
+        display: none;
+    }
+    /* mainvisual */
+    .mainvisual__content__text{
+        margin-top: 15px;
+    }
+    .mainvisual__content__title {
+        font-size: 7.5vmin;
+    }
+    .mainvisual__content__text{
+        font-size: 14px;
+    }
+    /* -------------------------------------
+                            content
+    ----------------------------------------*/
+    .h_title {
+        font-size: 22px;
+    }
+
+    .h_title.-fs1 {
+        font-size: 18px;
+    }
+    /* new */
+
+    #news{
+        padding: 55px 0;
+    }
+    .news_list {
+        margin: 45px 0 35px 0;
+        flex-wrap: wrap;
+    }
+    .news_list_cat{
+        font-size: 13px;
+    }
+    .news_list_text{
+        padding: 10px;
+    }
+    .news_list_title{
+        font-size: 15px;
+    }
+    /* concept */
+    #concept {
+        padding: 55px 0;
+    }
+    .news_list_item{
+        width: 50%;
+    }
+    .concept_info {
+        margin-top: 45px;
+        padding: 0 16px;
+    }
+
+    .concept_desc {
+        margin-bottom: 35px;
+    }
+
+    .concept_fit {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
+    .concept_thumail {
+        padding: 0 16px;
+    }
+
+    .concept_thumail_item {
+        padding-right: 4vw;
+    }
+
+    .concept_thumail_item.end {
+        padding-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .concept_thumail_item .sercon {
+        margin-left: 5vw;
+    }
+
+    .concept_thumail_item .first {
+        margin-right: 5vw;
+    }
+
+    /* wedding */
+    #wedding {
+        padding: 55px 0;
+    }
+    .wedding_item:nth-child(even){
+        margin-top: 40px;
+    }
+    .wedding_slogan {
+        font-size: 2.6vw;
+        padding: 5px 0;
+        left: 10px;
+    }
+
+    .wedding_content {
+        margin: 25px 0 45px 0 !important
+    }
+
+    .wedding_swiper {
+        margin-bottom: 35px;
+    }
+
+    /* party report */
+    .contract_layout_content {
+        font-size: 18px;
+    }
+
+    .contract_layout_content span {
+        font-size: 12px;
+    }
+
+    .contract_icon_list {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contract_icon_item {
+        margin: 0 20px;
+    }
+
+    /* contract */
+    .contract_info_title {
+        font-size: 18px;
+        padding: 0 16px;
+    }
+
+    .contract_col_title {
+        font-size: 22px;
+    }
+
+    .contract_col_title span {
+        margin-top: 10px;
+    }
+
+    .contract_icon a img {
+        width: 25px;
+    }
+
+    /* report */
+    #report {
+        padding: 55px 0;
+    }
+    .report_desc{
+        margin: 20px 0 35px;
+    }
+    /* contract */
+    .contract_info, .contract_info_title{
+        margin-top: 45px;
+    }
+
+    .contract_follow {
+        margin-top: 45px;
+        padding: 55px 0;
+    }
+
+    .contract_img ul {
+        flex-wrap: wrap;
+    }
+
+    .contract_img_item {
+        width: calc(100% / 3);
+    }
+
+    .contract_img {
+        margin: 45px 0;
+    }
+
+    /* slider TEXT */
+    .swiper1 {
+        height: 60px;
+    }
+
+    .swiper1 .swiper-wrapper a {
+        font-size: 15px;
+    }
+
+    /* footer */
+    .footer_logo {
+        padding: 0 20px;
+    }
+
+    .footer_content_link {
+        font-size: 15px;
+    }
+
+    .footer_content_contact span {
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .footer_content_phone {
+        font-size: 18px;
+    }
+
+    .footer_content_contact {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .footer_content_contact.blank {
+        flex-direction: column;
+    }
+
+    .footer_content_contact.blank .link {
+        justify-content: center;
+    }
+
+    .footer_content_link.target {
+        font-size: 14px;
+        margin: 0 2px;
+    }
+
+    /* slider custom */
+    .swiper_arrow {
+        width: 40px;
+    }
+
+    .swiper-progress-bar {
+        width: 80px;
+    }
+
+    .swiper-pagination {
+        font-size: 12px;
+        margin: 0 15px;
+    }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    /* contract */
+    .contract_contain{
+        flex-direction: column;
+    }
+    .contract_col{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 490px) {}
 

@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title></title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <title>Kitamaki</title>
+    <meta name="keywords" content="Kitamaki keywords">
+    <meta name="description" content="Kitamaki description">
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_res.css">
-    <link rel="stylesheet" href="./css/test.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Marcellus&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="./js/jquery.js"></script>
 </head>
@@ -38,8 +39,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <nav>
-                    </nav>
+                    <nav></nav>
                 </div>
                 <h1 id="top">
                     <a href="./">
@@ -72,8 +72,11 @@
                                         <h2 class="mainvisual__content__title">Natural<br>Resort Wedding1</h2>
                                         <span class="mainvisual__content__text" data-splitting>やまなしリゾートウェディング</span>
                                     </div>
+                                    <div class="mainvisual__small">
+                                        <img src="./images/common/mainvisual1.jpg" alt="">
+                                    </div>
                                 </div>
-                                <img class="mainvisual__content_img" src="./images/common/mainvisual1.jpg" alt="Natural Resort Wedding1">
+                                <img class="mainvisual_img" src="./images/common/mainvisual1.jpg" alt="Natural Resort Wedding1">
                             </div>
                             <div class="mainvisual__item swiper-slide slide-2">
                                 <div class="mainvisual__inner">
@@ -81,8 +84,11 @@
                                         <h2 class="mainvisual__content__title">Natural<br>Resort Wedding2</h2>
                                         <span class="mainvisual__content__text" data-splitting>やまなしリゾートウェディング</span>
                                     </div>
-                                    <img class="mainvisual__content_img" src="./images/common/mainvisual2.jpg" alt="Natural Resort Wedding1">
+                                    <div class="mainvisual__small">
+                                        <img src="./images/common/mainvisual2.jpg" alt="">
+                                    </div>
                                 </div>
+                                <img class="mainvisual_img" src="./images/common/mainvisual2.jpg" alt="Natural Resort Wedding1">
                             </div>
                             <div class="mainvisual__item swiper-slide slide-3">
                                 <div class="mainvisual__inner">
@@ -90,8 +96,11 @@
                                         <h2 class="mainvisual__content__title">Natural<br>Resort Wedding3</h2>
                                         <span class="mainvisual__content__text" data-splitting>やまなしリゾートウェディング</span>
                                     </div>
-                                    <img class="mainvisual__content_img" src="./images/common/mainvisual3.jpg" alt="Natural Resort Wedding1">
+                                    <div class="mainvisual__small">
+                                        <img src="./images/common/mainvisual3.jpg" alt="">
+                                    </div>
                                 </div>
+                                <img class="mainvisual_img" src="./images/common/mainvisual3.jpg" alt="Natural Resort Wedding1">
                             </div>
                         </div>
                         <div class="mainvisual__scroll" id="scroller">
@@ -102,11 +111,6 @@
                     </div>
                 </div>
             </section>
-            <!-- <div class="mainvisual__scroll" id="scroller">
-                <span class="mainvisual__scroll__text">
-                    SCROLL TO BEGIN
-                </span>
-            </div> -->
             <!-- end mainvisual -->
             <!-- start news -->
             <section id="news">
@@ -119,8 +123,10 @@
                                     <img src="./images/index/new_imgae1.jpg" alt="こちらにはタイトルが入ります。こちらにはタイトルが入ります。">
                                 </figure>
                                 <div class="news_list_text">
-                                    <span class="news_list_cat">【カテゴリー01】</span>
-                                    <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    <div class="news_list_contain">
+                                        <span class="news_list_cat">【カテゴリー01】</span>
+                                        <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    </div>
                                     <p class="news_list_date"><span>2021.00.00</span></p>
                                 </div>
                             </a>
@@ -131,8 +137,10 @@
                                     <img src="./images/index/new_imgae2.jpg" alt="こちらにはタイトルが入ります。こちらにはタイトルが入ります。">
                                 </figure>
                                 <div class="news_list_text">
-                                    <span class="news_list_cat">【カテゴリー01】</span>
-                                    <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    <div class="news_list_contain">
+                                        <span class="news_list_cat">【カテゴリー02】</span>
+                                        <h4 class="news_list_title">こちらにはタイトルが入ります。</h4>
+                                    </div>
                                     <p class="news_list_date"><span>2021.00.00</span></p>
                                 </div>
                             </a>
@@ -143,8 +151,10 @@
                                     <img src="./images/index/new_imgae3.jpg" alt="こちらにはタイトルが入ります。こちらにはタイトルが入ります。">
                                 </figure>
                                 <div class="news_list_text">
-                                    <span class="news_list_cat">【カテゴリー01】</span>
-                                    <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    <div class="news_list_contain">
+                                        <span class="news_list_cat">【カテゴリー03】</span>
+                                        <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    </div>
                                     <p class="news_list_date"><span>2021.00.00</span></p>
                                 </div>
                             </a>
@@ -155,8 +165,10 @@
                                     <img src="./images/index/new_imgae4.jpg" alt="こちらにはタイトルが入ります。こちらにはタイトルが入ります。">
                                 </figure>
                                 <div class="news_list_text">
-                                    <span class="news_list_cat">【カテゴリー01】</span>
-                                    <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    <div class="news_list_contain">
+                                        <span class="news_list_cat">【カテゴリー04】</span>
+                                        <h4 class="news_list_title">こちらにはタイトルが入ります。こちらにはタイトルが入ります。</h4>
+                                    </div>
                                     <p class="news_list_date"><span>2021.00.00</span></p>
                                 </div>
                             </a>
@@ -174,6 +186,32 @@
                     <h3 class="h_title" id="title2">CONCEPT</h3>
                     <p class="concept_fit" id="text1">「やまなしリゾートウェディング」なら<br>オズの魔法使いにおまかせ下さい </p>
                     <div class="concept_thumail">
+                            <div class="concept_thumail_item">
+                                <figure class="first">
+                                    <img class="image2" src="./images/index/concept_image2.jpg" width="650" alt="Image concept 2">
+                                </figure>
+                                <figure>
+                                    <img class="image3" src="./images/index/concept_image4.jpg" width="382" alt="Image concept 4">
+                                </figure>
+                            </div>
+                            <div class="concept_thumail_item end">
+                                <figure>
+                                    <img class="image4" src="./images/index/concept_image3.jpg" width="430" alt="Image concept 3">
+                                </figure>
+                                <figure class="sercon">
+                                    <img class="image2" src="./images/index/concept_image1.jpg" width="430" alt="Image concept 1">
+                                </figure>
+                            </div>
+                            <div class="concept_thumail_item left">
+                                <figure>
+                                    <img class="image4" src="./images/index/concept_image5.jpg" width="336" alt="Image concept 5">
+                                </figure>
+                            </div>
+                            <div class="concept_thumail_item right">
+                                <figure>
+                                    <img class="image3" src="./images/index/concept_image6.jpg" width="360" alt="Image concept 6">
+                                </figure>
+                            </div>
                     </div>
                     <div class="concept_info">
                         <p class="concept_desc" id="text2">
@@ -196,7 +234,7 @@
                             説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
                         </p>
                     </div>
-                    <div class="swiper2">
+                    <div class="wedding_swiper swiper2">
                         <ul class="swiper-wrapper" style="transition-timing-function: linear;">
                             <li class="swiper-slide wedding_item">
                                 <a href="#" class="wedding_contain">
@@ -246,7 +284,7 @@
             <section id="report">
                 <div class="inner">
                     <h3 class="h_title" id="title4">PARTY REPORT</h3>
-                    <div class="swiper-container" id="image1">
+                    <div class="report_swiper swiper-container" id="image1">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -382,6 +420,7 @@
                         <ul class="contract_contain">
                             <li class="contract_col">
                                 <a>
+                                    <img src="./images/index/contract_banner1.jpg" alt="資料請求はこちら">
                                     <div class="contract_col_title">
                                         資料請求はこちら
                                         <span>REQUEST DOCUMENTS</span>
@@ -390,6 +429,7 @@
                             </li>
                             <li class="contract_col">
                                 <a>
+                                    <img src="./images/index/contract_banner2.jpg" alt="会場見学はこちら">
                                     <div class="contract_col_title">
                                         会場見学はこちら
                                         <span>RESERVATION</span>
@@ -445,20 +485,35 @@
                         <span>オズブライダル</span>
                     </a>
                 </div>
-                <ul class="footer_content">
-                    <li><a class="footer_content_link" href="#">ホーム</a></li>
-                    <li><a class="footer_content_link" href="#">コンセプト</a></li>
-                    <li><a class="footer_content_link" href="#">ウェディングプラン</a></li>
-                    <li><a class="footer_content_link" href="#">パーティーレポート</a></li>
-                    <li><a class="footer_content_link" href="#">ドレスショップ</a></li>
-                    <li><a class="footer_content_link" href="#">お客様の声</a></li>
-                    <li><a class="footer_content_link" href="#">よくあるご質問</a></li>
-                    <li><a class="footer_content_link" href="#">会社概要・アクセス</a></li>
-                    <li><a class="footer_content_link" href="#">やまなしギフト</a></li>
-                    <li><a href="#">ホーム</a></li>
-                    <li><a href="#">コンセプト</a></li>
-                </ul> 
-                <address>Copyright &copy; oz bridal All rights reserved.</address>
+                <div class="footer_content">
+                    <ul class="footer_col">
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">ホーム</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">コンセプト</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">ウェディングプラン</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">パーティーレポート</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">ドレスショップ</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">お客様の声</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">よくあるご質問</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">会社概要・アクセス</a></li>
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">やまなしギフト</a></li>
+                    </ul> 
+                    <ul class="footer_col">
+                        <li class="footer_col_item"><a class="footer_content_link" href="#">資料請求</a></li>
+                        <li class="footer_col_item diff"><a class="footer_content_link" href="#">会場見学</a></li>
+                        <li class="footer_content_contact"><span>ADDRESS</span>〒400-0845  山梨県甲府市上今井町1118-5</li>
+                        <li class="footer_content_contact"><span>CONTACT</span>TEL<a class="footer_content_phone">055-241-3301</a>（10:00〜18:00・水休）</li>
+                        <li class="footer_content_contact blank">
+                            <span>SNS</span>
+                            <div class="link">
+                                <a class="footer_content_link target" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ozbridal_official/?hl=ja">Instagram</a>
+                                <a class="footer_content_link target" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ozbridal/">Facebook</a>
+                                <a class="footer_content_link target" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ozbridal">Twitter</a>
+                                <a class="footer_content_link target" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC5hPv3JtRJ6_5wAADVWK7KA/videos">YouTube</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <address class="footer_address">Copyright &copy; oz bridal All rights reserved.</address>
             </div>
         </footer>
     </div>
